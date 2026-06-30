@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mayoori Kulkarni | Portfolio & Resume</title>
+    <!-- SEO Optimization -->
+    <meta name="description" content="Portfolio of Mayoori Kulkarni, ENTC Student at Cummins College & Data Science Student at IIT Madras. Specializing in Software Development, ML, and Analytics.">
+    <meta name="keywords" content="Mayoori Kulkarni, Portfolio, Software Engineer, Data Science, ENTC, Cummins College, IIT Madras, Barclays Hack-o-hire">
+    
+    <!-- Google Fonts: Space Grotesk & Orbitron for futuristic/cyberpunk look -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;800;900&family=Space+Grotesk:wght@300;400;550;700&display=swap" rel="stylesheet">
+    
+    <!-- FontAwesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Background Canvas for Interactive Particles -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Header Navigation -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <a href="#home" class="logo">
+                <span class="logo-accent">&lt;</span>MK<span class="logo-accent">/&gt;</span>
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#achievements" class="nav-link">Achievements</a>
+                <a href="#art" class="nav-link">Art</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1 class="glitch-text" data-text="MAYOORI KULKARNI">MAYOORI KULKARNI</h1>
+            <h2 class="hero-subtitle">
+                I am a <span id="typewriter"></span><span class="cursor">|</span>
+            </h2>
+            <p class="hero-desc">
+                Third-Year Electronics & Telecommunication student at Cummins College of Engineering, Pune, & Data Science scholar at IIT Madras. Crafting robust software solutions, fraud analytics models, and creative architectures.
+            </p>
+            <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">
+                    <span>Explore Projects</span>
+                    <i class="fa-solid fa-arrow-right"></i>
+                </a>
+            </div>
+            
+            <div class="social-links">
+                <a href="http://www.linkedin.com/in/mayoori-kulkarni-b630ab321" target="_blank" title="LinkedIn" id="linkedin-link">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                </a>
+                <a href="https://github.com/getoveritmayoori" target="_blank" title="GitHub" id="github-link">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+                <a href="https://leetcode.com/u/getoveritmayoori/" target="_blank" title="LeetCode" id="leetcode-link">
+                    <i class="fa-solid fa-code"></i>
+                </a>
+                <a href="https://medium.com/@kulkarnimayoori" target="_blank" title="Medium" id="medium-link">
+                    <i class="fa-brands fa-medium"></i>
+                </a>
+            </div>
+        </div>
+        
+        <div class="hero-glow-container">
+            <div class="glow-orb pink-orb"></div>
+            <div class="glow-orb purple-orb"></div>
+            <div class="glow-orb blue-orb"></div>
+        </div>
+        
+        <a href="#about" class="scroll-down">
+            <span>Scroll Down</span>
+            <i class="fa-solid fa-chevron-down"></i>
+        </a>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">01. About Me</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="about-grid">
+                <div class="about-text">
+                    <p class="lead-p">
+                        Hello! I am a passionate engineering student who thrives at the intersection of logical analytical thinking, technology, and aesthetic design.
+                    </p>
+                    <p>
+                        Currently pursuing a <strong class="highlight-pink">Bachelor of Technology in ENTC</strong> at MKSSS' Cummins College of Engineering for Women, Pune, alongside a concurrent <strong class="highlight-blue">Bachelor of Science in Data Science and Applications</strong> from IIT Madras. This dual background equips me with a unique analytical worldview, merging hardware dynamics with advanced software development and data science principles.
+                    </p>
+                    <p>
+                        I love building applications that address real-world constraints. Whether it is evaluating risk on thousands of bank transactions, developing scalable web applications to connect peers, or designing embedded systems for green energy, I love turning complex challenges into streamlined digital experiences.
+                    </p>
+                </div>
+                
+                <div class="education-cards">
+                    <div class="edu-card glass-panel" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="edu-icon"><i class="fa-solid fa-graduation-cap"></i></div>
+                        <h3 class="edu-title">Bachelor of Technology (ENTC)</h3>
+                        <p class="edu-inst">MKSSS' Cummins College of Engineering, Pune</p>
+                        <div class="edu-meta">
+                            <span class="edu-date">2024 - 2028</span>
+                            <span class="edu-cgpa">CGPA: 8.9 / 10</span>
+                        </div>
+                    </div>
+                    
+                    <div class="edu-card glass-panel" data-tilt>
+                        <div class="card-glow"></div>
+                        <div class="edu-icon"><i class="fa-solid fa-chart-line"></i></div>
+                        <h3 class="edu-title">Bachelor of Science (Data Science)</h3>
+                        <p class="edu-inst">IIT Madras</p>
+                        <div class="edu-meta">
+                            <span class="edu-date">2025 - 2029</span>
+                            <span class="edu-cgpa">CGPA: 7.2 / 10</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">02. Core Capabilities</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="skills-wrapper">
+                <div class="skills-category glass-panel">
+                    <h3 class="category-title"><i class="fa-solid fa-terminal"></i> Technical Skills</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag tag-blue">Java</span>
+                        <span class="skill-tag tag-purple">Python</span>
+                        <span class="skill-tag tag-pink">C Programming</span>
+                        <span class="skill-tag tag-blue">DBMS & SQL Basics</span>
+                        <span class="skill-tag tag-purple">Problem Solving (DSA)</span>
+                        <span class="skill-tag tag-pink">Web Development (React, JS)</span>
+                    </div>
+                </div>
+                
+                <div class="skills-category glass-panel">
+                    <h3 class="category-title"><i class="fa-solid fa-lightbulb"></i> Strategic Attributes</h3>
+                    <div class="skills-tags">
+                        <span class="skill-tag tag-pink">Strong Communication</span>
+                        <span class="skill-tag tag-blue">Creativity & Critical Thinking</span>
+                        <span class="skill-tag tag-purple">Time Management</span>
+                        <span class="skill-tag tag-pink">Rapid Adaptability</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">03. Featured Projects</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card glass-panel" data-tilt>
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fa-solid fa-shield-halved"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/getoveritmayoori" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Credit Card Fraud Detection & Risk Analytics</h3>
+                    <p class="project-description">
+                        An analytics platform engineered on 8,700+ banking transactions. Identifies key fraud anomalies via statistical modeling and feature engineering. Implements velocity-based and location-based scoring to calculate real-time behavioral risk.
+                    </p>
+                    <div class="project-tech">
+                        <span>Python</span>
+                        <span>Statistical Analysis</span>
+                        <span>Risk Scoring</span>
+                        <span>Pandas</span>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card glass-panel" data-tilt>
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fa-solid fa-users"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/getoveritmayoori" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Campus Connect</h3>
+                    <p class="project-description">
+                        Full-stack web application developed to bridge academic gaps. Mentorship connection portal facilitating peer-to-peer doubt clearing, resource sharing, skill workshops, and monetized peer tutoring for engineering cohorts.
+                    </p>
+                    <div class="project-tech">
+                        <span>React.js</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>Express</span>
+                        <span>JavaScript</span>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card glass-panel" data-tilt>
+                    <div class="project-header">
+                        <div class="project-icon"><i class="fa-solid fa-bolt"></i></div>
+                        <div class="project-links">
+                            <a href="https://github.com/getoveritmayoori" target="_blank" title="View Source"><i class="fa-brands fa-github"></i></a>
+                        </div>
+                    </div>
+                    <h3 class="project-title">Renewable Energy Microgrid Monitor</h3>
+                    <p class="project-description">
+                        An IoT-enabled energy monitoring system. Measures solar/wind battery arrays dynamically via microcontrollers, aggregating usage trends and telemetry. Implements cloud-syncing metrics to optimize distribution across localized microgrids.
+                    </p>
+                    <div class="project-tech">
+                        <span>Embedded C</span>
+                        <span>Sensors</span>
+                        <span>IoT</span>
+                        <span>Cloud Analytics</span>
+                        <span>Microgrids</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience" class="experience section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">04. Leadership & Experience</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="experience-list">
+                <!-- Role 1 -->
+                <div class="experience-card glass-panel" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">Organiser</h3>
+                            <h4 class="exp-org">TEDxCCOEW</h4>
+                        </div>
+                        <span class="exp-date">2026 - 2027</span>
+                    </div>
+                    <p class="exp-desc">Leading event strategy, speaker curation, and creative branding direction for Cummins College of Engineering's independent TEDx chapter.</p>
+                </div>
+
+                <!-- Role 2 -->
+                <div class="experience-card glass-panel" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">Creative Architect</h3>
+                            <h4 class="exp-org">MLSC, CCOEW</h4>
+                        </div>
+                        <span class="exp-date">2025 - 2026</span>
+                    </div>
+                    <p class="exp-desc">Spearheading design branding, web layouts, and interactive UI assets for the Microsoft Learn Student Chapter.</p>
+                </div>
+
+                <!-- Role 3 -->
+                <div class="experience-card glass-panel" data-tilt>
+                    <div class="card-glow"></div>
+                    <div class="exp-header">
+                        <div class="exp-title-group">
+                            <h3 class="exp-role">Club Member</h3>
+                            <h4 class="exp-org">Photography Club, CCOEW</h4>
+                        </div>
+                        <span class="exp-date">2024 - 2026</span>
+                    </div>
+                    <p class="exp-desc">Capturing campus engagements, managing visual documentation, and collaborating on photographic showcases.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Achievements Section -->
+    <section id="achievements" class="achievements section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">05. Achievements & Hackathons</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="timeline-container">
+                <div class="timeline-line"></div>
+                
+                <!-- Timeline Item 1 -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2026</span>
+                        <h3 class="timeline-title">Myntra WeForShe Hackerramp</h3>
+                        <p class="timeline-desc">Participant in the nationwide hackathon program, designing innovative tech-driven commerce ideas and prototypes.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 2 -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2026</span>
+                        <h3 class="timeline-title">BNY Platinum Collaboration Hackathon</h3>
+                        <p class="timeline-desc">Participant in a highly collaborative hackathon, engineering innovative digital finance prototypes under real-world constraints.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 3 -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-title">Barclays Hack-o-hire</h3>
+                        <p class="timeline-desc">Selected participant in the competitive Barclays recruitment hackathon, working on fintech analytics solutions.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 4 -->
+                <div class="timeline-item right">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-title">Winner - Stock Market Competition</h3>
+                        <p class="timeline-desc">Secured 1st Place at Innovation 2025 by building optimal virtual portfolio systems and demonstrating quantitative trading logic.</p>
+                    </div>
+                </div>
+
+                <!-- Timeline Item 5 -->
+                <div class="timeline-item left">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content glass-panel">
+                        <span class="timeline-date">2025</span>
+                        <h3 class="timeline-title">Smart India Hackathon (SIH)</h3>
+                        <p class="timeline-desc">Participated in internal selections representing Cummins College, designing software prototypes to address national issues.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Art Section (Hue Harmonics Showcase) -->
+    <section id="art" class="art section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">06. Creative Domain</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="art-wrapper glass-panel">
+                <div class="art-content">
+                    <h3 class="art-heading">Hue Harmonics</h3>
+                    <p class="art-text">
+                        A core aspect of my engineering approach is creativity. Through my art platform <strong class="highlight-pink">@hueharmonics</strong>, I explore visual aesthetics, color harmony, and creative composition. 
+                    </p>
+                    <p class="art-text">
+                        As the Creative Architect for MLSC and Organiser for TEDx, I blend these artistic principles directly with technology to design engaging front-end experiences and elegant layout concepts.
+                    </p>
+                    <!-- Mentioned via @hueharmonics above -->
+                </div>
+                <div class="art-visual">
+                    <div class="cyber-art-box">
+                        <div class="art-line row-1"></div>
+                        <div class="art-line row-2"></div>
+                        <div class="art-line row-3"></div>
+                        <div class="art-overlay-text">HUE HARMONICS</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact section">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">07. Get In Touch</h2>
+                <div class="title-line"></div>
+            </div>
+            
+            <div class="contact-card-centered glass-panel">
+                <h3 class="info-title">Let's Connect</h3>
+                <p class="info-text">
+                    I am currently looking for summer internships and technical opportunities where I can apply my dual engineering and data science expertise. Feel free to reach out for hackathons, collaborations, or job opportunities.
+                </p>
+                
+                <div class="info-details-centered">
+                    <div class="info-detail-item">
+                        <i class="fa-solid fa-envelope detail-icon"></i>
+                        <div class="detail-content">
+                            <h4>Email</h4>
+                            <a href="mailto:kulkarnimayoori@gmail.com">kulkarnimayoori@gmail.com</a>
+                        </div>
+                    </div>
+                    
+                    <div class="info-detail-item">
+                        <i class="fa-solid fa-location-dot detail-icon"></i>
+                        <div class="detail-content">
+                            <h4>Location</h4>
+                            <p>Karve Nagar, Pune, India</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p class="copyright">&copy; 2026 Mayoori Kulkarni. All rights reserved.</p>
+            <p class="designed-by">Designed with <i class="fa-solid fa-heart highlight-pink"></i> for Google, Barclays, Netflix & more.</p>
+        </div>
+    </footer>
+
+    <!-- Core Script -->
+    <script src="script.js"></script>
+</body>
+</html>
